@@ -6,111 +6,164 @@
     <meta name="description" content="Drew Bennett-Litts personal sports page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drew Bennett-Litts | Sports Page</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <style>
+        /* Page layout */
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 1000px;
+            margin: auto;
             background-image: url('images/background.jpg');
             background-size: cover;
             background-attachment: fixed;
-            margin: 0;
-            padding: 20px;
             color: #333;
+            padding: 20px;
         }
+
+        #wrapper {
+            border: 2px #009 solid;
+            background-color: rgba(255,255,255,0.9);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* Header */
         header {
-            background-color: rgba(0, 64, 128, 0.9);
-            color: white;
+            color: #FFF;
+            background-color: #036;
             padding: 20px;
             text-align: center;
+            border-radius: 5px;
         }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation */
         nav {
-            margin: 20px 0;
+            text-align: center;
+            padding: 12px;
+            background-color: #CCF;
+            border-radius: 5px;
+            margin: 15px 0;
         }
         nav a {
-            margin-right: 15px;
+            margin: 0 15px;
             color: #004080;
             font-weight: bold;
             text-decoration: none;
+            padding: 5px 8px;
         }
         nav a:hover {
-            text-decoration: underline;
+            background-color: #004080;
+            color: #FFF;
+            border-radius: 5px;
+            transition: 0.3s;
         }
+
+        /* Main content */
+        main {
+            color: #009;
+        }
+
         section {
-            margin-bottom: 20px;
-            background-color: rgba(255,255,255,0.8);
+            background-color: #FFC;
             padding: 15px;
+            margin-bottom: 20px;
             border-radius: 10px;
         }
-        footer {
-            background-color: rgba(0, 64, 128, 0.9);
-            color: white;
-            text-align: center;
-            padding: 10px;
+
+        h2 {
+            color: #036;
         }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
         .sports-img {
             width: 200px;
             height: auto;
             display: block;
             margin: 10px 0;
         }
+
+        /* Footer */
+        footer {
+            color: #FFF;
+            background-color: #036;
+            font-size: 10px;
+            height: 30px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Example class */
+        .important {
+            color: #C00; /* darker red */
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
+<div id="wrapper">
 
-<header>
-    <h1>Drew Bennett-Litts</h1>
-    <p>Welcome to my professional sports page</p>
-</header>
+    <header>
+        <h1>Drew Bennett-Litts</h1>
+        <p class="important">Welcome to my professional sports page</p>
+    </header>
 
-<nav>
-    <a href="#about">About Me</a>
-    <a href="#sports">Favorite Sports</a>
-    <a href="#contact">Contact</a>
-    <a href="http://www.espn.com" target="_blank">Sports News</a>
-</nav>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#sports">Favorite Sports</a>
+        <a href="#contact">Contact</a>
+        <a href="http://www.espn.com" target="_blank">Sports News</a>
+    </nav>
 
-<hr>
+    <main>
+        <section id="about">
+            <article>
+                <h2>About Me</h2>
+                <p>Hi, my name is <b>Drew Bennett-Litts</b>. Sports have always been a big part of my life.</p>
+                <img src="images/me.jpg" alt="Drew Bennett-Litts smiling" class="sports-img">
+            </article>
+        </section>
 
-<section id="about">
-    <div>
-        <h2>About Me</h2>
-        <p>Hi, my name is <b>Drew Bennett-Litts</b>. Sports have always been a big part of my life.</p>
-        <img src="images/me.jpg" alt="Drew Bennett-Litts smiling" class="sports-img">
-    </div>
-</section>
+        <section id="sports">
+            <article>
+                <h2>Favorite Sports</h2>
+                <ul>
+                    <li><b>Football</b> – I enjoy the energy and teamwork.
+                        <img src="images/football.jpg" alt="Football game in action" class="sports-img">
+                    </li>
+                    <li><b>Basketball</b> – Fast-paced and fun with friends.
+                        <img src="images/basketball.jpg" alt="Basketball game on court" class="sports-img">
+                    </li>
+                    <li><b>UFC</b> – Combines <span style="font-style: italic;">endurance</span> and <span style="font-style: italic;">strategy</span>.
+                        <img src="images/ufc.jpg" alt="UFC fight in progress" class="sports-img">
+                    </li>
+                </ul>
+            </article>
+        </section>
 
-<hr>
+        <section id="contact">
+            <article>
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:dbenne24@student.scf.edu">dbenne24@student.scf.edu</a></p>
+                <p>Phone: <a href="tel:+18453320819">+1 (845) 333-20819</a></p>
+                <p>Follow me on <a href="http://www.espn.com" target="_blank">ESPN</a></p>
+            </article>
+        </section>
+    </main>
 
-<section id="sports">
-    <div>
-        <h2>Favorite Sports</h2>
-        <ul>
-            <li><b>Football</b> – I enjoy the energy and teamwork.
-                <img src="images/football.jpg" alt="Football game in action" class="sports-img">
-            </li>
-            <li><b>Basketball</b> – Fast-paced and fun with friends.
-                <img src="images/basketball.jpg" alt="Basketball game on court" class="sports-img">
-            </li>
-            <li><b>UFC</b> – Combines <span style="font-style: italic;">endurance</span> and <span style="font-style: italic;">strategy</span>.
-                <img src="images/ufc.jpg" alt="UFC fight in progress" class="sports-img">
-            </li>
-        </ul>
-    </div>
-</section>
+    <footer>
+        <p>&copy; 2025 Drew Bennett-Litts. All rights reserved.</p>
+    </footer>
 
-<hr>
-
-<section id="contact">
-    <div>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:dbenne24@student.scf.edu">dbenne24@student.scf.edu</a></p>
-        <p>Phone: <a href="tel:+18453320819">+1 (845) 333-20819</a></p>
-        <p>Follow me on <a href="http://www.espn.com" target="_blank">ESPN</a></p>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2025 Drew Bennett-Litts. All rights reserved.</p>
-</footer>
-
+</div> <!-- /wrapper -->
 </body>
 </html>
